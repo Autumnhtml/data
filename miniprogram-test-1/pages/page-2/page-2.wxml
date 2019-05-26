@@ -1,0 +1,9 @@
+<view class="container-2" >
+
+  <image src="/images/test.png" class="img" ></image>
+  <text style='font-weight: bold ;font-size:60rpx;'>{{shuju.p1}}</text>
+  <text>{{shuju.p2}}</text>
+  <text>{{(count+n)>=300?"A":"B"}}</text>
+  <text hidden="{{shuju.caiji}}">我好菜啊</text>
+  <text wx:if="{{shuju.caiji}}">我好棒啊</text>
+</view>

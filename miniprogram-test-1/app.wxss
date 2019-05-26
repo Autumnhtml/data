@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.container-2{
+  height: 100vh;   /**vh=%**/
+  background-color: #fff;
+
+/**弹性盒子布局**/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/**view margin:0 20pxz 左右外边距20px**/

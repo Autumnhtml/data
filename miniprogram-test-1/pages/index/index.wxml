@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">Hello World!</text>
+    <view style='margin-top:100rpx;'>
+      <text>开始 </text>
+
+      <navigator class="text-1" url="../page-2/page-2" open-type='switchTab' hover-class='navg-hover'>使用</navigator>
+      <!--  open-type='redirect'可以阻止返回  -->
+
+      <text> 程序</text>
+    </view>
+  </view>
+</view>

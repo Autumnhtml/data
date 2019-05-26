@@ -1,0 +1,13 @@
+<swiper style='height:240px' indicator-dots='{{true}}' 
+previous-margin='180rpx' next-margin='180rpx'>
+
+  <swiper-item wx:for="{{suju}}" calss="FOR" class="container-2">
+  <text>index+1:{{index+1}}</text>
+  <text>{{item.a}}</text>
+  <text>{{item.b}}</text>
+  <text>{{item.c}}</text>
+  </swiper-item>
+
+</swiper> 
+
+
